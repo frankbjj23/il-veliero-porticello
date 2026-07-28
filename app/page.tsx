@@ -95,7 +95,7 @@ const menu = [
   },
 ];
 
-const siteUrl = "https://frankbjj23.github.io/il-veliero-porticello/";
+const siteUrl = "https://ilvelieroporticello.com/";
 const googleReviewUrl =
   "https://search.google.com/local/writereview?placeid=ChIJJ6wKfAjjGRMReaFJXp_FxX8";
 const googleMapsUrl =
