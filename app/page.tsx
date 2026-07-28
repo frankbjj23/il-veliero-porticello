@@ -95,6 +95,10 @@ const menu = [
   },
 ];
 
+const siteUrl = "https://frankbjj23.github.io/il-veliero-porticello/";
+const googleReviewUrl =
+  "https://maps.google.com?q=Via%20Francesco%20Zizzo,%2041,%2090017%20Porticello%20PA&ftid=0x1319e3087c0aac27:0x7fc5c59f5e49a179&entry=gps&shh=CAE&lucs=,94297699,94231188,94280568,47071704,94218641,94282134,100813464,94286869,100820247&g_st=iw";
+
 export default function Home() {
   return (
     <main>
@@ -106,6 +110,7 @@ export default function Home() {
         <nav aria-label="Navigazione principale">
           <a href="#menu">Menu</a>
           <a href="#terrazza">La terrazza</a>
+          <a href="#recensione">Recensione</a>
           <a href="#contatti">Contatti</a>
         </nav>
         <a className="call" href="tel:+393276204411">Chiama</a>
@@ -183,6 +188,48 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="reviewShare" id="recensione">
+        <article className="reviewCard">
+          <p className="eyebrow blue">La tua opinione conta</p>
+          <div className="stars" aria-label="Cinque stelle">
+            <span aria-hidden="true">★ ★ ★ ★ ★</span>
+          </div>
+          <h2>Ti sei trovato bene?</h2>
+          <p>
+            Racconta la tua esperienza al Veliero. Una recensione su Google
+            aiuta altre persone a scoprirci.
+          </p>
+          <a
+            className="button reviewButton"
+            href={googleReviewUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Lascia una recensione Google <span>↗</span>
+          </a>
+        </article>
+
+        <article className="qrCard">
+          <div className="qrFrame">
+            <img
+              src="/il-veliero-qr.png"
+              alt={`Codice QR per aprire ${siteUrl}`}
+            />
+          </div>
+          <div>
+            <p className="eyebrow gold">Menu sempre con te</p>
+            <h2>Scansiona<br />e apri il sito.</h2>
+            <p>
+              Inquadra il codice con la fotocamera del telefono per vedere menu,
+              foto e contatti.
+            </p>
+            <a className="qrDownload" href="/il-veliero-qr.png" download>
+              Scarica il codice QR ↓
+            </a>
+          </div>
+        </article>
+      </section>
+
       <section className="visit" id="contatti">
         <div className="visitPhoto">
           <img src="/menu-cover.jpg" alt="Il menu originale de Il Veliero" />
@@ -191,12 +238,12 @@ export default function Home() {
           <p className="eyebrow gold">Ti aspettiamo</p>
           <h2>Ci vediamo<br />al <em>Veliero.</em></h2>
           <div className="contactRows">
-            <div><span>Indirizzo</span><p>Piano Stenditore<br />Porticello (Santa Flavia), PA</p></div>
+            <div><span>Indirizzo</span><p>Via Francesco Zizzo, 41<br />90017 Porticello, PA</p></div>
             <div><span>Telefono</span><p><a href="tel:+393276204411">327 620 4411</a></p></div>
           </div>
           <div className="visitActions">
             <a className="button primary goldButton" href="tel:+393276204411">Chiama ora</a>
-            <a className="button ghost light" href="https://www.google.com/maps/search/?api=1&query=Piano+Stenditore+Porticello+Santa+Flavia" target="_blank" rel="noreferrer">Apri la mappa</a>
+            <a className="button ghost light" href={googleReviewUrl} target="_blank" rel="noreferrer">Apri la mappa</a>
           </div>
         </div>
       </section>
