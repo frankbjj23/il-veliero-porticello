@@ -1,10 +1,9 @@
 import { cp, mkdir, rm, writeFile } from "node:fs/promises";
 
-const repository =
-  process.env.GITHUB_REPOSITORY ?? "frankbjj23/il-veliero-porticello";
-const [owner, repo] = repository.split("/");
-const siteOrigin = `https://${owner}.github.io`;
-const sitePrefix = `/${repo}`;
+const customDomain =
+  process.env.PAGES_CUSTOM_DOMAIN ?? "ilvelieroporticello.com";
+const siteOrigin = `https://${customDomain}`;
+const sitePrefix = "";
 const outputDirectory = new URL("../pages-dist/", import.meta.url);
 
 await rm(outputDirectory, { recursive: true, force: true });
@@ -38,7 +37,8 @@ html = html
 await Promise.all([
   writeFile(new URL("index.html", outputDirectory), html, "utf8"),
   writeFile(new URL("404.html", outputDirectory), html, "utf8"),
+  writeFile(new URL("CNAME", outputDirectory), `${customDomain}\n`, "utf8"),
   writeFile(new URL(".nojekyll", outputDirectory), "", "utf8"),
 ]);
 
-console.log(`GitHub Pages export ready at ${siteOrigin}${sitePrefix}/`);
+console.log(`GitHub Pages export ready at ${siteOrigin}/`);
