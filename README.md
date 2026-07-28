@@ -1,5 +1,7 @@
 # Il Veliero Porticello
 
+![Il Veliero Porticello terrace overlooking the sea with an orange spritz](public/og.png)
+
 A responsive website and digital menu for **Il Veliero**, a bar, sandwich shop,
 and drink venue on the Porticello waterfront in Santa Flavia, Sicily.
 
@@ -30,7 +32,7 @@ The delivery process included:
 - Direct directions through Google Maps
 - Direct Google review link for the verified place
 - Downloadable, print-ready QR code
-- Custom production domain with SSL
+- Custom production domain
 
 ## Technology
 
