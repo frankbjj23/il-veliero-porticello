@@ -93,7 +93,7 @@ em { color: var(--gold); font-weight: 400; }
 .qrCard { align-items: center; background: var(--blue); color: white; display: grid; gap: clamp(30px,5vw,70px); grid-template-columns: minmax(180px,.8fr) 1.2fr; }
 .qrCard h2 { color: white; font-size: clamp(42px,4.5vw,66px); }
 .qrCard > div > p:not(.eyebrow) { color: #d8e4ec; }
-.qrFrame { background: white; border: 12px solid white; box-shadow: 0 22px 55px rgba(0,0,0,.2); padding: 8px; transform: rotate(-2deg); }
+.qrFrame { background: white; border: 12px solid white; box-shadow: 0 22px 55px rgba(0,0,0,.2); padding: 8px; }
 .qrFrame img { aspect-ratio: 1; }
 .qrDownload { border-bottom: 1px solid rgba(255,255,255,.5); display: inline-block; font-size: 11px; font-weight: 800; letter-spacing: .12em; margin-top: 18px; padding-bottom: 9px; text-transform: uppercase; }
 

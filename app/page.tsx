@@ -97,7 +97,9 @@ const menu = [
 
 const siteUrl = "https://frankbjj23.github.io/il-veliero-porticello/";
 const googleReviewUrl =
-  "https://maps.google.com?q=Via%20Francesco%20Zizzo,%2041,%2090017%20Porticello%20PA&ftid=0x1319e3087c0aac27:0x7fc5c59f5e49a179&entry=gps&shh=CAE&lucs=,94297699,94231188,94280568,47071704,94218641,94282134,100813464,94286869,100820247&g_st=iw";
+  "https://search.google.com/local/writereview?placeid=ChIJJ6wKfAjjGRMReaFJXp_FxX8";
+const googleMapsUrl =
+  "https://www.google.com/maps/search/?api=1&query=Il%20Veliero%20Porticello&query_place_id=ChIJJ6wKfAjjGRMReaFJXp_FxX8";
 
 export default function Home() {
   return (
@@ -243,7 +245,7 @@ export default function Home() {
           </div>
           <div className="visitActions">
             <a className="button primary goldButton" href="tel:+393276204411">Chiama ora</a>
-            <a className="button ghost light" href={googleReviewUrl} target="_blank" rel="noreferrer">Apri la mappa</a>
+            <a className="button ghost light" href={googleMapsUrl} target="_blank" rel="noreferrer">Apri la mappa</a>
           </div>
         </div>
       </section>
