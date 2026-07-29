@@ -43,7 +43,7 @@ test("server-renders the completed Il Veliero site", async () => {
   assert.match(html, /Lascia una recensione Google/);
   assert.match(html, /href="tel:\+393276204411"/);
   assert.match(html, /src="\/terrace-hero\.jpg"/);
-  assert.match(html, /src="\/il-veliero-qr\.png"/);
+  assert.match(html, /src="\/il-veliero-qr-v2\.png"/);
   assert.doesNotMatch(html, /codex-preview|Building your site|Starter Project/i);
 });
 
@@ -63,7 +63,7 @@ test("GitHub Pages export uses custom-domain root asset paths", async () => {
   assert.equal(cname.trim(), "ilvelieroporticello.com");
   assert.match(html, /href="\/assets\/index-[^"]+\.css"/);
   assert.match(html, /src="\/terrace-hero\.jpg"/);
-  assert.match(html, /src="\/il-veliero-qr\.png"/);
+  assert.match(html, /src="\/il-veliero-qr-v2\.png"/);
   assert.doesNotMatch(html, /\/il-veliero-porticello\//);
   assert.ok(assetFiles.some((file) => /^index-.+\.css$/.test(file)));
 });

@@ -214,7 +214,7 @@ export default function Home() {
         <article className="qrCard">
           <div className="qrFrame">
             <img
-              src="/il-veliero-qr.png"
+              src="/il-veliero-qr-v2.png"
               alt={`Codice QR per aprire ${siteUrl}`}
             />
           </div>
@@ -225,7 +225,7 @@ export default function Home() {
               Inquadra il codice con la fotocamera del telefono per vedere menu,
               foto e contatti.
             </p>
-            <a className="qrDownload" href="/il-veliero-qr.png" download>
+            <a className="qrDownload" href="/il-veliero-qr-v2.png" download>
               Scarica il codice QR ↓
             </a>
           </div>
