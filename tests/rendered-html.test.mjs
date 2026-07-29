@@ -45,7 +45,7 @@ test("server-renders the completed Il Veliero site", async () => {
   assert.match(html, /Frank Smith III, web developer del New Jersey/);
   assert.match(
     html,
-    /href="https:\/\/franksmithlll\.com\/paid-client-website-from-menu-photos-il-veliero-frank-smith-iii"/,
+    /href="https:\/\/franksmithlll\.com\/"/,
   );
   assert.match(html, /src="\/terrace-hero\.jpg"/);
   assert.match(html, /src="\/il-veliero-qr-v2\.png"/);

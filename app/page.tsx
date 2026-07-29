@@ -257,7 +257,7 @@ export default function Home() {
           <p className="footerCredit">
             Sito realizzato da{" "}
             <a
-              href="https://franksmithlll.com/paid-client-website-from-menu-photos-il-veliero-frank-smith-iii"
+              href="https://franksmithlll.com/"
               target="_blank"
               rel="author noreferrer"
             >
