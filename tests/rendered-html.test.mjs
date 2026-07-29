@@ -49,6 +49,9 @@ test("server-renders the completed Il Veliero site", async () => {
   );
   assert.match(html, /src="\/terrace-hero\.jpg"/);
   assert.match(html, /src="\/il-veliero-qr-v2\.png"/);
+  assert.match(html, /application\/ld\+json/);
+  assert.match(html, /"@type":"BarOrPub"/);
+  assert.match(html, /Via Francesco Zizzo, 41/);
   assert.doesNotMatch(html, /codex-preview|Building your site|Starter Project/i);
 });
 
@@ -71,4 +74,10 @@ test("GitHub Pages export uses custom-domain root asset paths", async () => {
   assert.match(html, /src="\/il-veliero-qr-v2\.png"/);
   assert.doesNotMatch(html, /\/il-veliero-porticello\//);
   assert.ok(assetFiles.some((file) => /^index-.+\.css$/.test(file)));
+
+  const robots = await readFile(new URL("../pages-dist/robots.txt", import.meta.url), "utf8");
+  assert.match(robots, /Sitemap: https:\/\/ilvelieroporticello\.com\/sitemap\.xml/);
+
+  const sitemap = await readFile(new URL("../pages-dist/sitemap.xml", import.meta.url), "utf8");
+  assert.match(sitemap, /<loc>https:\/\/ilvelieroporticello\.com\/<\/loc>/);
 });
