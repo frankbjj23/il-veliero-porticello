@@ -30,6 +30,10 @@ and drink venue on the Porticello waterfront in Santa Flavia, Sicily.
   </tr>
 </table>
 
+Watch the [Il Veliero project video](https://youtu.be/tl2KBDlMIUc) for a concise
+overview of the source-material review, menu organization, and responsive
+delivery process.
+
 ## Paid client project
 
 Frank Smith III was contracted and paid to create this website. The source
