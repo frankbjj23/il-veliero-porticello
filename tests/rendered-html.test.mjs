@@ -72,6 +72,8 @@ test("GitHub Pages export uses custom-domain root asset paths", async () => {
   assert.match(html, /href="\/assets\/index-[^"]+\.css"/);
   assert.match(html, /src="\/terrace-hero\.jpg"/);
   assert.match(html, /src="\/il-veliero-qr-v2\.png"/);
+  assert.match(html, /application\/ld\+json/);
+  assert.match(html, /"@type":"BarOrPub"/);
   assert.doesNotMatch(html, /\/il-veliero-porticello\//);
   assert.ok(assetFiles.some((file) => /^index-.+\.css$/.test(file)));
 

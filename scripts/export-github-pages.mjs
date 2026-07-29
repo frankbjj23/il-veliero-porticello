@@ -26,7 +26,11 @@ if (!response.ok) {
 let html = await response.text();
 
 html = html
-  .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "")
+  .replace(
+    /<script\b([^>]*)>[\s\S]*?<\/script>/gi,
+    (script, attributes) =>
+      /type=["']application\/ld\+json["']/i.test(attributes) ? script : "",
+  )
   .replace(/<link\b[^>]*\brel=["']modulepreload["'][^>]*>/gi, "")
   .replace(
     /https?:\/\/localhost(?::\d+)?\//g,
