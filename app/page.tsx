@@ -252,7 +252,19 @@ export default function Home() {
 
       <footer>
         <a className="brand footerBrand" href="#home"><span className="wheel">✺</span><span>IL VELIERO<small>BAR · PANINERIA · DRINKERIA</small></span></a>
-        <p>Porticello, Sicilia · <a href="tel:+393276204411">327 620 4411</a></p>
+        <div className="footerDetails">
+          <p>Porticello, Sicilia · <a href="tel:+393276204411">327 620 4411</a></p>
+          <p className="footerCredit">
+            Sito realizzato da{" "}
+            <a
+              href="https://franksmithlll.com/paid-client-website-from-menu-photos-il-veliero-frank-smith-iii"
+              target="_blank"
+              rel="author noreferrer"
+            >
+              Frank Smith III, web developer del New Jersey
+            </a>
+          </p>
+        </div>
         <a href="#home">Torna su ↑</a>
       </footer>
     </main>

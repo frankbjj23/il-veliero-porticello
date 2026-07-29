@@ -111,6 +111,11 @@ em { color: var(--gold); font-weight: 400; }
 footer { align-items: center; background: #021325; color: #b8c3cc; display: flex; font-size: 11px; justify-content: space-between; letter-spacing: .08em; padding: 35px clamp(24px,6vw,90px); text-transform: uppercase; }
 .footerBrand { font-size: 17px; }
 .footerBrand .wheel { font-size: 18px; height: 35px; width: 35px; }
+.footerDetails { display: grid; gap: 8px; text-align: center; }
+.footerDetails p { margin: 0; }
+.footerCredit { font-size: 10px; letter-spacing: .035em; text-transform: none; }
+.footerCredit a { color: #eef4f7; text-decoration: underline; text-decoration-color: rgba(197,162,74,.65); text-underline-offset: 4px; }
+.footerCredit a:hover { color: var(--gold); }
 
 @media (max-width: 800px) {
   .topbar { height: 74px; padding: 0 18px; }
@@ -139,6 +144,7 @@ footer { align-items: center; background: #021325; color: #b8c3cc; display: flex
   .visit { grid-template-columns: 1fr; }
   .visitPhoto { height: 430px; }
   footer { align-items: start; flex-direction: column; gap: 24px; }
+  .footerDetails { text-align: left; }
 }
 
 @media (max-width: 560px) {

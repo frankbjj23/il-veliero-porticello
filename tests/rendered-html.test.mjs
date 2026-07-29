@@ -42,6 +42,11 @@ test("server-renders the completed Il Veliero site", async () => {
   assert.match(html, /Il nostro menu/);
   assert.match(html, /Lascia una recensione Google/);
   assert.match(html, /href="tel:\+393276204411"/);
+  assert.match(html, /Frank Smith III, web developer del New Jersey/);
+  assert.match(
+    html,
+    /href="https:\/\/franksmithlll\.com\/paid-client-website-from-menu-photos-il-veliero-frank-smith-iii"/,
+  );
   assert.match(html, /src="\/terrace-hero\.jpg"/);
   assert.match(html, /src="\/il-veliero-qr-v2\.png"/);
   assert.doesNotMatch(html, /codex-preview|Building your site|Starter Project/i);
