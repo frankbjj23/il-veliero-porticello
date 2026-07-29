@@ -52,6 +52,10 @@ test("server-renders the completed Il Veliero site", async () => {
   assert.match(html, /application\/ld\+json/);
   assert.match(html, /"@type":"BarOrPub"/);
   assert.match(html, /Via Francesco Zizzo, 41/);
+  assert.match(
+    html,
+    /name="google-site-verification" content="-UIvYsLhHlD7jd9KyLcBDToGOufzDD-ieMM0np-AHdU"/,
+  );
   assert.doesNotMatch(html, /codex-preview|Building your site|Starter Project/i);
 });
 
@@ -74,6 +78,10 @@ test("GitHub Pages export uses custom-domain root asset paths", async () => {
   assert.match(html, /src="\/il-veliero-qr-v2\.png"/);
   assert.match(html, /application\/ld\+json/);
   assert.match(html, /"@type":"BarOrPub"/);
+  assert.match(
+    html,
+    /name="google-site-verification" content="-UIvYsLhHlD7jd9KyLcBDToGOufzDD-ieMM0np-AHdU"/,
+  );
   assert.doesNotMatch(html, /\/il-veliero-porticello\//);
   assert.ok(assetFiles.some((file) => /^index-.+\.css$/.test(file)));
 
