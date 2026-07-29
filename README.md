@@ -7,6 +7,29 @@ and drink venue on the Porticello waterfront in Santa Flavia, Sicily.
 
 **Live site:** [ilvelieroporticello.com](https://ilvelieroporticello.com/)
 
+## Project presentation
+
+<table>
+  <tr>
+    <td width="50%">
+      <img
+        src="docs/project-assets/frank-smith-iii-il-veliero-project-likeness.png"
+        alt="AI-assisted likeness of Frank Smith III reviewing the Il Veliero website project at a laptop."
+      />
+    </td>
+    <td width="50%">
+      <img
+        src="docs/project-assets/il-veliero-live-site.png"
+        alt="Live Il Veliero restaurant website showing its Porticello waterfront hero and navigation."
+      />
+    </td>
+  </tr>
+  <tr>
+    <td>Project portrait created from Frank Smith III's authorized reference photographs.</td>
+    <td>Verified capture of the active Il Veliero website.</td>
+  </tr>
+</table>
+
 ## Paid client project
 
 Frank Smith III was contracted and paid to create this website. The source
