@@ -119,7 +119,7 @@ export default function Home() {
       </header>
 
       <section className="hero" id="home">
-        <img src="/terrace-hero.jpg" alt="La terrazza de Il Veliero con vista sul mare" />
+        <img src="/terrace-hero.jpg" alt="La terrazza de Il Veliero con vista sul mare" width="720" height="1280" />
         <div className="heroShade" />
         <div className="heroContent">
           <p className="eyebrow">Porticello · Santa Flavia</p>
@@ -184,9 +184,9 @@ export default function Home() {
           <a className="textLink" href="#contatti">Vieni a trovarci <span>→</span></a>
         </div>
         <div className="photoGrid">
-          <img className="photoTall" src="/spritz-sea.jpg" alt="Uno spritz sulla terrazza con il mare sullo sfondo" />
-          <img src="/terrace-1.jpg" alt="Tavoli all'aperto de Il Veliero" />
-          <img src="/terrace-2.jpg" alt="Vista dalla terrazza verso il lungomare" />
+          <img className="photoTall" src="/spritz-sea.jpg" alt="Uno spritz sulla terrazza con il mare sullo sfondo" width="720" height="1280" />
+          <img src="/terrace-1.jpg" alt="Tavoli all'aperto de Il Veliero" width="720" height="1280" />
+          <img src="/terrace-2.jpg" alt="Vista dalla terrazza verso il lungomare" width="719" height="1280" />
         </div>
       </section>
 
@@ -216,6 +216,8 @@ export default function Home() {
             <img
               src="/il-veliero-qr-v2.png"
               alt={`Codice QR per aprire ${siteUrl}`}
+              width="1200"
+              height="1200"
             />
           </div>
           <div>
@@ -234,7 +236,7 @@ export default function Home() {
 
       <section className="visit" id="contatti">
         <div className="visitPhoto">
-          <img src="/menu-cover.jpg" alt="Il menu originale de Il Veliero" />
+          <img src="/menu-cover.jpg" alt="Il menu originale de Il Veliero" width="960" height="1280" />
         </div>
         <div className="visitContent">
           <p className="eyebrow gold">Ti aspettiamo</p>
